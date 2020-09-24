@@ -14,6 +14,7 @@
 		6B7B4734251CA12600AA3A1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B4732251CA12600AA3A1A /* LaunchScreen.storyboard */; };
 		6B7B4740251CA1D700AA3A1A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B473F251CA1D700AA3A1A /* TableViewController.swift */; };
 		6B7B4743251CB8B800AA3A1A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B4742251CB8B800AA3A1A /* Notifications.swift */; };
+		6B7B4747251CBF8C00AA3A1A /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B4746251CBF8C00AA3A1A /* photo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6B7B4735251CA12600AA3A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B7B473F251CA1D700AA3A1A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		6B7B4742251CB8B800AA3A1A /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		6B7B4746251CBF8C00AA3A1A /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo.jpg; path = ../../../../../../../Downloads/photo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				6B7B4729251CA12400AA3A1A /* SceneDelegate.swift */,
 				6B7B4742251CB8B800AA3A1A /* Notifications.swift */,
 				6B7B473F251CA1D700AA3A1A /* TableViewController.swift */,
+				6B7B4746251CBF8C00AA3A1A /* photo.jpg */,
 				6B7B472D251CA12400AA3A1A /* Main.storyboard */,
 				6B7B4730251CA12600AA3A1A /* Assets.xcassets */,
 				6B7B4732251CA12600AA3A1A /* LaunchScreen.storyboard */,
@@ -129,6 +132,7 @@
 			files = (
 				6B7B4734251CA12600AA3A1A /* LaunchScreen.storyboard in Resources */,
 				6B7B4731251CA12600AA3A1A /* Assets.xcassets in Resources */,
+				6B7B4747251CBF8C00AA3A1A /* photo.jpg in Resources */,
 				6B7B472F251CA12400AA3A1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
