@@ -11,12 +11,7 @@ class TableViewController: UITableViewController {
     
     let notifications = Notifications()
     
-    let notificationsType = ["Local Notification",
-                         "Local Notification with Action",
-                         "Local Notification with Content",
-                         "Push Notification with  APNs",
-                         "Push Notification with Firebase",
-                         "Push Notification with Content"]
+    let notificationsType = ["Local Notification with action and content"]
 
     // MARK: - Table view data source
 
