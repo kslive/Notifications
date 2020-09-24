@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        requestAutorisation()
+        requestAuthorization()
         return true
     }
 
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
     
-    func requestAutorisation() {
+    func requestAuthorization() {
         
         notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { [weak self ](granted, error) in
             
@@ -44,6 +44,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notificationCenter.getNotificationSettings { settings in
             
             print("Settings: \(settings)")
+        }
+    }
+    
+    func scheduleNotification(notificationType: String) {
+        
+        let content = UNMutableNotificationContent()
+        
+        content.title = notificationType
+        content.body = "This is example how to create " + notificationType
+        content.sound = .default
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let identifier = "Local Notification"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        notificationCenter.add(request) { error in
+            
+            if let error = error {
+                
+                print("\(error.localizedDescription)")
+            }
         }
     }
 }
